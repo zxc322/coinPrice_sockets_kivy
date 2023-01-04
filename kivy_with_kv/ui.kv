@@ -1,0 +1,29 @@
+<Price>:
+    cols: 2
+    rows: 3
+
+    Label:
+        text: "BTC/USDT"
+        font_size: 40
+    Label:
+        text: str(root.btc_price)
+        font_size: 40
+        color: root.set_color(price=root.btc_price, pair="old_btc")
+
+    Label:
+        text: "ETH/USDT"
+        font_size: 40
+    Label:
+        text: str(root.eth_price)
+        font_size: 40
+        color: root.set_color(price=root.eth_price, pair="old_eth")
+
+    Label:
+        text: "BNB/USDT"
+        font_size: 40
+    Label:
+        text: str(root.bnb_price)
+        font_size: 40
+        color: root.set_color(price=root.bnb_price, pair="old_bnb")
+
+
