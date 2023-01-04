@@ -1,3 +1,8 @@
+import sys, os
+current = os.path.dirname(os.path.realpath(__file__))
+parent_directory = os.path.dirname(current)  
+sys.path.append(parent_directory)
+
 from kivy.app import App
 from kivy.clock import Clock
 from kivy.properties import NumericProperty
